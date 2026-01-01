@@ -363,8 +363,73 @@
                 </div>
             </div>
 
-            <!-- SLIDE 12: FEATURE - SMART REDEEM -->
+            <!-- SLIDE 12: FEATURE - ADMIN DISCOUNT -->
             <div class="slide" data-slide="12">
+                <div class="slide-content">
+                    <h2 class="slide-title">Feature: Admin Discount</h2>
+                    <div class="feature-detail">
+                        <div class="feature-info">
+                            <span class="priority-tag p0">P0 - Must Have</span>
+                            <div class="user-story">
+                                <strong>User Story:</strong> Sebagai user tier "Elite", saya ingin diskon biaya admin otomatis, agar pengiriman uang lebih murah.
+                            </div>
+                            <div class="acceptance-criteria">
+                                <h4>Acceptance Criteria:</h4>
+                                <ul>
+                                    <li>✅ Sistem otomatis memotong biaya admin berdasarkan tier</li>
+                                    <li>✅ Label "Elite Discount Applied" ditampilkan</li>
+                                    <li>✅ Breakdown fee: harga normal vs setelah diskon</li>
+                                </ul>
+                            </div>
+                            <div class="tier-discount-info" style="margin-top: 15px; background: linear-gradient(135deg, #E0F7FA 0%, #B2EBF2 100%); padding: 15px; border-radius: 12px;">
+                                <h5 style="margin: 0 0 10px 0; color: #007FFF;">💰 Discount per Tier:</h5>
+                                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                                    <span style="background: #fff; padding: 8px 15px; border-radius: 20px; font-size: 0.9em;">Explorer: <strong>0%</strong></span>
+                                    <span style="background: #fff; padding: 8px 15px; border-radius: 20px; font-size: 0.9em;">Pro: <strong>25%</strong></span>
+                                    <span style="background: linear-gradient(135deg, #007FFF, #00CED1); color: white; padding: 8px 15px; border-radius: 20px; font-size: 0.9em;">Elite: <strong>100% FREE</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-mockup">
+                            <!-- Interactive CSS Phone Mockup for Checkout -->
+                            <div class="phone-mockup">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen">
+                                    <div class="checkout-card-ui">
+                                        <div class="checkout-header">
+                                            <span style="font-size: 1.2em;">💰</span>
+                                            <strong>Payment Summary</strong>
+                                        </div>
+                                        <div class="checkout-row">
+                                            <span>Biaya Admin</span>
+                                            <span style="text-decoration: line-through; color: #999;">Rp 35.000</span>
+                                        </div>
+                                        <div class="checkout-row discount-row">
+                                            <span>🏆 Elite Discount</span>
+                                            <span style="color: #00CED1; font-weight: 600;">-Rp 35.000 (100%)</span>
+                                        </div>
+                                        <div class="checkout-divider"></div>
+                                        <div class="checkout-row total-row">
+                                            <span><strong>Total Biaya Admin</strong></span>
+                                            <span class="free-badge">FREE ✓</span>
+                                        </div>
+                                        <div class="elite-badge-small">
+                                            <span>🏆 Elite Member Exclusive</span>
+                                        </div>
+                                        <button class="checkout-btn">Lanjutkan Pembayaran →</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-notes">
+                    <strong>Speaker Notes:</strong> Diskon admin adalah benefit paling tangible yang langsung dirasakan user. Elite tier mendapat FREE admin fee sebagai ultimate benefit untuk mendorong upgrade tier.
+                </div>
+            </div>
+
+            <!-- SLIDE 13: FEATURE - SMART REDEEM -->
+            <div class="slide" data-slide="13">
                 <div class="slide-content">
                     <h2 class="slide-title">Feature: Smart Redeem</h2>
                     <div class="feature-detail">
@@ -380,13 +445,42 @@
                                 </div>
                                 <div class="after">
                                     <h5>✅ After</h5>
-                                    <p>Admin Rp25.000 - Koin Rp2.000 = Bayar Rp23.000</p>
+                                    <p>Admin Rp45.000 - Koin Rp2.000 = Bayar Rp43.000</p>
                                 </div>
                             </div>
                         </div>
                         <div class="feature-mockup">
-                            <div class="mockup-placeholder">
-                                <img src="../wireframe_smart_redeem.png" alt="Smart Redeem Wireframe" style="max-width:100%;border-radius:12px;">
+                            <!-- Interactive CSS Phone Mockup -->
+                            <div class="phone-mockup">
+                                <div class="phone-notch"></div>
+                                <div class="phone-screen">
+                                    <div class="smart-redeem-card-ui">
+                                        <div class="card-header-ui">
+                                            <div class="brand-ui">
+                                                <span>Smart Redeem</span>
+                                            </div>
+                                            <div class="toggle-ui">ON</div>
+                                        </div>
+                                        <div class="card-title-ui">
+                                            Gunakan TR Coins untuk potong biaya admin
+                                        </div>
+                                        <div class="balance-ui">Saldo: 2.500 Coins</div>
+                                        <div class="cost-breakdown">
+                                            <div class="cost-row">
+                                                <span>Biaya Admin:</span>
+                                                <span>Rp 45.000</span>
+                                            </div>
+                                            <div class="cost-row discount">
+                                                <span>Potongan Coins:</span>
+                                                <span>-Rp 2.000</span>
+                                            </div>
+                                            <div class="cost-row total">
+                                                <span>Bayar:</span>
+                                                <span>Rp 43.000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -396,8 +490,8 @@
                 </div>
             </div>
 
-            <!-- SLIDE 13: FEATURE - MILESTONES & GAMIFICATION -->
-            <div class="slide" data-slide="13">
+            <!-- SLIDE 14: FEATURE - MILESTONES & GAMIFICATION -->
+            <div class="slide" data-slide="14">
                 <div class="slide-content">
                     <h2 class="slide-title">Feature: Milestones & Gamification</h2>
                     <div class="milestone-content">
@@ -435,8 +529,8 @@
                 </div>
             </div>
 
-            <!-- SLIDE 14: METRICS & ANALYTICS -->
-            <div class="slide" data-slide="14">
+            <!-- SLIDE 15: METRICS & ANALYTICS -->
+            <div class="slide" data-slide="15">
                 <div class="slide-content">
                     <h2 class="slide-title">Metrics & Analytics</h2>
                     <div class="metrics-section">
@@ -477,8 +571,8 @@
                 </div>
             </div>
 
-            <!-- SLIDE 15: ROLLOUT PLAN -->
-            <div class="slide" data-slide="15">
+            <!-- SLIDE 16: ROLLOUT PLAN -->
+            <div class="slide" data-slide="16">
                 <div class="slide-content">
                     <h2 class="slide-title">Rollout Plan</h2>
                     <div class="rollout-timeline">
@@ -524,8 +618,8 @@
                 </div>
             </div>
 
-            <!-- SLIDE 16: RISK & MITIGATION -->
-            <div class="slide" data-slide="16">
+            <!-- SLIDE 17: RISK & MITIGATION -->
+            <div class="slide" data-slide="17">
                 <div class="slide-content">
                     <h2 class="slide-title">Risk & Mitigation</h2>
                     <table class="risk-table">
@@ -561,8 +655,8 @@
                 </div>
             </div>
 
-            <!-- SLIDE 17: BUSINESS IMPACT SUMMARY -->
-            <div class="slide" data-slide="17">
+            <!-- SLIDE 18: BUSINESS IMPACT SUMMARY -->
+            <div class="slide" data-slide="18">
                 <div class="slide-content">
                     <h2 class="slide-title">Business Impact Summary</h2>
                     <div class="impact-summary">
@@ -599,8 +693,8 @@
                 </div>
             </div>
 
-            <!-- SLIDE 18: NEXT ITERATION & CLOSING -->
-            <div class="slide" data-slide="18">
+            <!-- SLIDE 19: NEXT ITERATION & CLOSING -->
+            <div class="slide" data-slide="19">
                 <div class="slide-content closing-slide">
                     <h2 class="slide-title">Next Iteration & Closing</h2>
                     <div class="future-scope">
@@ -631,7 +725,7 @@
         <!-- Navigation -->
         <div class="nav-controls">
             <button id="prevBtn" onclick="changeSlide(-1)">‹ Previous</button>
-            <span id="slideCounter">1 / 18</span>
+            <span id="slideCounter">1 / 19</span>
             <button id="nextBtn" onclick="changeSlide(1)">Next ›</button>
         </div>
 
