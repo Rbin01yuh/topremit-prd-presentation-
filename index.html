@@ -3,142 +3,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Topremit Elite - PRD Presentation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Topremit Elite - Tiered Loyalty & Gamification Program</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/pptxgenjs@3.12.0/dist/pptxgen.bundle.js"></script>
     <link rel="stylesheet" href="presentation_styles.css">
+    <link rel="stylesheet" href="enhanced_styles.css">
 </head>
 <body>
     <div class="presentation-container">
         <div class="slides-wrapper" id="slidesWrapper">
             
-            <!-- SLIDE 1: COVER -->
+            <!-- SLIDE 1: COVER - PREMIUM ANIMATED -->
             <div class="slide active" data-slide="1">
                 <div class="slide-content cover-slide">
-                    <img src="../Logo_Topremit_(vertical).png" alt="Topremit Logo" class="cover-logo">
+                    <div class="cover-particles"></div>
+                    <img src="Logo_Topremit_(vertical).png" alt="Topremit Logo" class="cover-logo">
+                    <div class="cover-badge">Product Requirement Document</div>
                     <h1 class="cover-title">Topremit Elite</h1>
                     <h2 class="cover-subtitle">Loyalty Program for Retention & Frequency</h2>
-                    <p class="cover-description">Product Requirement Document Presentation</p>
+                    <p class="cover-description">Tiered Loyalty System • Smart Redeem • Gamified Milestones</p>
                     <div class="cover-meta">
-                        <span>Ridho Bintang Aulia</span>
-                        <span>•</span>
-                        <span>1 Januari 2026</span>
+                        <span class="meta-item">👤 Ridho Bintang Aulia</span>
+                        <span class="meta-divider">|</span>
+                        <span class="meta-item">📅 1 Januari 2026</span>
+                        <span class="meta-divider">|</span>
+                        <span class="meta-item">📋 Version 1.0</span>
                     </div>
                 </div>
                 <div class="speaker-notes">
-                    <strong>Speaker Notes:</strong> Presentasi ini bertujuan menjelaskan solusi loyalty program Topremit Elite untuk meningkatkan retention dan frekuensi transaksi pengguna.
+                    <strong>Speaker Notes:</strong> PRD ini bertujuan menjelaskan solusi loyalty program Topremit Elite untuk meningkatkan retention rate dari 60% menjadi 75% dan transaction frequency 2x lipat.
                 </div>
             </div>
 
-            <!-- SLIDE 2: EXECUTIVE SUMMARY -->
+            <!-- SLIDE 2: DAFTAR ISI / TABLE OF CONTENTS -->
             <div class="slide" data-slide="2">
                 <div class="slide-content">
-                    <h2 class="slide-title">Executive Summary</h2>
-                    <div class="summary-box">
-                        <p><strong>Masalah Utama:</strong> Ekosistem loyalitas Topremit saat ini bersifat transaksional satu arah. Pengguna setia tidak mendapat apresiasi khusus, dan TR Coins dengan jumlah kecil menjadi "frozen assets" karena minimum penarikan Rp10.000.</p>
-                        <p><strong>Solusi:</strong> Topremit Elite - program loyalitas bertingkat (Explorer → Pro → Elite) dengan Smart Redeem yang memungkinkan koin digunakan tanpa minimum.</p>
-                        <p><strong>Impact:</strong> Retention Rate +15% (60% → 75%), Frekuensi Transaksi 2x lipat, Customer Lifetime Value +25%.</p>
+                    <h2 class="slide-title">📋 Daftar Isi PRD</h2>
+                    <div class="toc-container">
+                        <div class="toc-section">
+                            <div class="toc-item">
+                                <span class="toc-number">01</span>
+                                <div class="toc-info">
+                                    <strong>Project Background</strong>
+                                    <p>Kondisi saat ini & masalah utama</p>
+                                </div>
+                                <span class="toc-points">5 Points</span>
+                            </div>
+                            <div class="toc-item">
+                                <span class="toc-number">02</span>
+                                <div class="toc-info">
+                                    <strong>User Pain Points</strong>
+                                    <p>Transactional Void, Koin Pasif, No Recognition</p>
+                                </div>
+                                <span class="toc-points">10 Points</span>
+                            </div>
+                            <div class="toc-item">
+                                <span class="toc-number">03</span>
+                                <div class="toc-info">
+                                    <strong>Competitive Benchmarking</strong>
+                                    <p>Gap analysis vs GrabRewards, Traveloka, Flip, Wise</p>
+                                </div>
+                                <span class="toc-points">15 Points</span>
+                            </div>
+                            <div class="toc-item">
+                                <span class="toc-number">04</span>
+                                <div class="toc-info">
+                                    <strong>Proposed Solutions</strong>
+                                    <p>Tiering System, Smart Redeem, Dynamic Multiplier</p>
+                                </div>
+                                <span class="toc-points">30 Points</span>
+                            </div>
+                        </div>
+                        <div class="toc-section">
+                            <div class="toc-item">
+                                <span class="toc-number">05</span>
+                                <div class="toc-info">
+                                    <strong>Hypothesis</strong>
+                                    <p>Primary & supporting hypotheses</p>
+                                </div>
+                                <span class="toc-points">10 Points</span>
+                            </div>
+                            <div class="toc-item">
+                                <span class="toc-number">06</span>
+                                <div class="toc-info">
+                                    <strong>Features</strong>
+                                    <p>Elite Dashboard, Smart Redeem, Milestones</p>
+                                </div>
+                                <span class="toc-points">35 Points</span>
+                            </div>
+                            <div class="toc-item">
+                                <span class="toc-number">07</span>
+                                <div class="toc-info">
+                                    <strong>Success Metrics</strong>
+                                    <p>Retention, CLV, Transaction Frequency</p>
+                                </div>
+                                <span class="toc-points">10 Points</span>
+                            </div>
+                            <div class="toc-item">
+                                <span class="toc-number">08</span>
+                                <div class="toc-info">
+                                    <strong>Next Scope</strong>
+                                    <p>Business Loyalty, Social Leaderboard, Partners</p>
+                                </div>
+                                <span class="toc-points">10 Points</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toc-total">
+                        <span>Total Poin Evaluasi:</span>
+                        <strong>105 Points</strong>
                     </div>
                 </div>
                 <div class="speaker-notes">
-                    <strong>Speaker Notes:</strong> Value proposition utama adalah mengubah TR Coins dari "saldo tambahan" menjadi "alat retensi strategis" melalui tier system dan smart redeem.
+                    <strong>Speaker Notes:</strong> PRD ini disusun berdasarkan format standar dengan total 105 poin evaluasi. Setiap section dirancang untuk menjawab pertanyaan spesifik dari stakeholder.
                 </div>
             </div>
 
-            <!-- SLIDE 3: CURRENT CONTEXT -->
+            <!-- SLIDE 3: EXECUTIVE SUMMARY -->
             <div class="slide" data-slide="3">
                 <div class="slide-content">
-                    <h2 class="slide-title">Current Context</h2>
-                    <div class="context-grid">
-                        <div class="context-card">
-                            <h4>Ekosistem Saat Ini</h4>
-                            <ul>
-                                <li><strong>TR Coins:</strong> Cashback poin per transaksi</li>
-                                <li><strong>Referral:</strong> Bonus Rp120.000 (3x Rp40.000)</li>
-                                <li><strong>Affiliate:</strong> Komisi untuk partner</li>
-                            </ul>
+                    <h2 class="slide-title">📊 Executive Summary</h2>
+                    <div class="exec-summary-grid">
+                        <div class="exec-card problem">
+                            <div class="exec-icon">⚠️</div>
+                            <h4>Masalah Utama</h4>
+                            <p>Ekosistem loyalitas Topremit bersifat <strong>transaksional satu arah</strong>. Pengguna setia tidak dapat apresiasi khusus, dan TR Coins dengan jumlah kecil menjadi <strong>"frozen assets"</strong> karena minimum penarikan Rp10.000.</p>
                         </div>
-                        <div class="context-card highlight">
-                            <h4>Critical Issues</h4>
-                            <ul>
-                                <li>Minimum withdrawal Rp10.000 → frozen assets</li>
-                                <li>User mudah switch karena selisih Rp5.000</li>
-                                <li>Tidak ada pembeda user baru vs loyal</li>
-                            </ul>
+                        <div class="exec-card solution">
+                            <div class="exec-icon">💡</div>
+                            <h4>Solusi yang Diajukan</h4>
+                            <p><strong>Topremit Elite</strong> - Program loyalitas bertingkat (Explorer → Pro → Elite) dengan <strong>Smart Redeem</strong> yang memungkinkan koin digunakan tanpa minimum threshold.</p>
+                        </div>
+                        <div class="exec-card impact">
+                            <div class="exec-icon">📈</div>
+                            <h4>Target Impact</h4>
+                            <div class="impact-stats">
+                                <div class="stat"><span class="number">+15%</span><span class="label">Retention Rate</span></div>
+                                <div class="stat"><span class="number">2x</span><span class="label">Tx Frequency</span></div>
+                                <div class="stat"><span class="number">+25%</span><span class="label">CLV</span></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="flow-diagram">
-                        <span class="flow-item">User Transaksi</span>
-                        <span class="flow-arrow">→</span>
-                        <span class="flow-item">Dapat Koin</span>
-                        <span class="flow-arrow">→</span>
-                        <span class="flow-item">Withdraw ke Bank</span>
-                        <span class="flow-arrow">→</span>
-                        <span class="flow-item warning">No Engagement Loop</span>
+                    <div class="exec-value-prop">
+                        <strong>🎯 Value Proposition:</strong> Mengubah TR Coins dari "saldo tambahan" menjadi <strong>"alat retensi strategis"</strong> melalui tier system dan smart redeem.
                     </div>
                 </div>
                 <div class="speaker-notes">
-                    <strong>Speaker Notes:</strong> Pasar remitansi Indonesia sangat kompetitif. Tanpa program loyalitas yang kuat, Topremit rentan kehilangan user ke kompetitor.
+                    <strong>Speaker Notes:</strong> Executive summary menunjukkan masalah, solusi, dan impact yang diharapkan secara ringkas untuk stakeholder yang tidak punya banyak waktu.
                 </div>
             </div>
 
-            <!-- SLIDE 4: CORE USER PAIN POINT -->
+            <!-- SLIDE 4: PROJECT BACKGROUND -->
             <div class="slide" data-slide="4">
                 <div class="slide-content">
-                    <h2 class="slide-title">Core User Pain Point</h2>
+                    <h2 class="slide-title">🔍 Project Background</h2>
+                    <div class="context-grid">
+                        <div class="context-card ecosystem">
+                            <div class="card-header">
+                                <span class="card-icon">🪙</span>
+                                <h4>Ekosistem Saat Ini</h4>
+                            </div>
+                            <ul>
+                                <li><strong>TR Coins:</strong> Cashback poin untuk setiap transaksi remitansi</li>
+                                <li><strong>Referral Program:</strong> Bonus Rp120.000 (Rp40.000 × 3)</li>
+                                <li><strong>Affiliate Program:</strong> Komisi untuk partner pendaftar</li>
+                            </ul>
+                        </div>
+                        <div class="context-card critical">
+                            <div class="card-header">
+                                <span class="card-icon">🚨</span>
+                                <h4>Critical Issues</h4>
+                            </div>
+                            <ul>
+                                <li>❌ <strong>Minimum Withdrawal Barrier:</strong> Min Rp10.000 → frozen assets</li>
+                                <li>❌ <strong>Price Sensitivity:</strong> User mudah switch karena selisih Rp5.000</li>
+                                <li>❌ <strong>No Differentiation:</strong> Tidak ada pembeda user baru vs loyal</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flow-diagram-enhanced">
+                        <div class="flow-title">Current User Flow (No Engagement Loop)</div>
+                        <div class="flow-items">
+                            <span class="flow-item">👤 User Transaksi</span>
+                            <span class="flow-arrow">→</span>
+                            <span class="flow-item">🪙 Dapat Koin</span>
+                            <span class="flow-arrow">→</span>
+                            <span class="flow-item">🏦 Withdraw ke Bank</span>
+                            <span class="flow-arrow">→</span>
+                            <span class="flow-item warning">⚠️ No Loop!</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-notes">
+                    <strong>Speaker Notes:</strong> Pasar remitansi Indonesia sangat kompetitif. Tanpa program loyalitas yang kuat, Topremit rentan kehilangan user ke kompetitor dengan selisih biaya kecil.
+                </div>
+            </div>
+
+            <!-- SLIDE 5: USER PAIN POINTS -->
+            <div class="slide" data-slide="5">
+                <div class="slide-content">
+                    <h2 class="slide-title">😔 Core User Pain Points</h2>
                     <div class="pain-point-main">
                         <h3>"Transactional Void"</h3>
-                        <blockquote>"Saya sudah 2 tahun kirim uang lewat Topremit, tapi perlakuannya sama saja dengan pengguna baru."</blockquote>
+                        <blockquote>
+                            <span class="quote-icon">💬</span>
+                            "Saya sudah 2 tahun kirim uang lewat Topremit, tapi perlakuannya sama saja dengan pengguna baru."
+                        </blockquote>
                     </div>
                     <div class="pain-points-grid">
                         <div class="pain-card">
                             <span class="pain-icon">😔</span>
                             <h4>Koin Pasif</h4>
-                            <p>Koin Rp2.000 tidak bisa digunakan (min Rp10.000)</p>
+                            <p>Koin Rp2.000 tidak bisa digunakan karena minimum withdrawal Rp10.000</p>
+                            <div class="pain-quote">"Koin saya jadi dead value..."</div>
                         </div>
                         <div class="pain-card">
                             <span class="pain-icon">💔</span>
                             <h4>No Recognition</h4>
-                            <p>Tidak ada apresiasi untuk pengguna setia</p>
+                            <p>Tidak ada apresiasi atau status spesial untuk pengguna setia</p>
+                            <div class="pain-quote">"Seharusnya saya dapat lebih..."</div>
                         </div>
                         <div class="pain-card">
                             <span class="pain-icon">🚶</span>
                             <h4>Low Attachment</h4>
-                            <p>Mudah pindah ke kompetitor</p>
+                            <p>Mudah pindah ke kompetitor karena tidak ada switching cost</p>
+                            <div class="pain-quote">"Tidak ada yang mengikat saya..."</div>
                         </div>
                     </div>
                 </div>
                 <div class="speaker-notes">
-                    <strong>Speaker Notes:</strong> Pain point ini dipilih karena berdampak langsung ke retention. User seperti Ibu Maria (kirim ke anak di UK) dan Pak Budi (UMKM) butuh apresiasi.
+                    <strong>Speaker Notes:</strong> Pain point ini dipilih karena berdampak langsung ke retention. User seperti Ibu Maria (kirim ke anak di UK) dan Pak Budi (UMKM) butuh apresiasi lebih.
                 </div>
             </div>
 
-            <!-- SLIDE 5: WHY THIS PROBLEM MATTERS -->
-            <div class="slide" data-slide="5">
+            <!-- SLIDE 6: USER PERSONA -->
+            <div class="slide" data-slide="6">
                 <div class="slide-content">
-                    <h2 class="slide-title">Why This Problem Matters</h2>
+                    <h2 class="slide-title">👥 User Persona</h2>
+                    <div class="persona-grid">
+                        <div class="persona-card">
+                            <div class="persona-avatar">👩‍🦳</div>
+                            <div class="persona-name">Ibu Maria</div>
+                            <div class="persona-age">55 tahun</div>
+                            <div class="persona-desc">Kirim uang bulanan ke anak di UK untuk biaya kuliah</div>
+                            <div class="persona-pain">
+                                <strong>Pain Point:</strong> Butuh penghematan admin fee & apresiasi loyalitas
+                            </div>
+                            <div class="persona-need">💰 Admin Fee FREE</div>
+                        </div>
+                        <div class="persona-card featured">
+                            <div class="persona-avatar">👨‍💼</div>
+                            <div class="persona-name">Pak Budi</div>
+                            <div class="persona-age">42 tahun</div>
+                            <div class="persona-desc">Pemilik UMKM, bayar supplier China 3-4x per bulan</div>
+                            <div class="persona-pain">
+                                <strong>Pain Point:</strong> Ingin diskon volume & prioritas customer support
+                            </div>
+                            <div class="persona-need">⚡ Priority Support</div>
+                        </div>
+                        <div class="persona-card">
+                            <div class="persona-avatar">👨‍💻</div>
+                            <div class="persona-name">Andi</div>
+                            <div class="persona-age">28 tahun</div>
+                            <div class="persona-desc">Freelancer, rutin kirim uang ke pacar yang tinggal di luar negeri</div>
+                            <div class="persona-pain">
+                                <strong>Pain Point:</strong> Mencari rate terbaik, mudah pindah aplikasi karena selisih biaya kecil
+                            </div>
+                            <div class="persona-need">📊 Best Rate + Loyalty</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-notes">
+                    <strong>Speaker Notes:</strong> Ketiga persona mewakili segmen utama: personal regular, business, dan freelancer. Masing-masing punya expectation berbeda terhadap loyalty program.
+                </div>
+            </div>
+
+            <!-- SLIDE 7: WHY THIS PROBLEM MATTERS -->
+            <div class="slide" data-slide="7">
+                <div class="slide-content">
+                    <h2 class="slide-title">❓ Why This Problem Matters</h2>
                     <div class="impact-grid">
                         <div class="impact-card negative">
-                            <h4>Jika Tidak Diselesaikan</h4>
+                            <h4>❌ Jika Tidak Diselesaikan</h4>
                             <ul>
-                                <li>📉 Churn tinggi ke kompetitor</li>
-                                <li>📉 Frekuensi transaksi stagnan</li>
-                                <li>📉 CLV tetap rendah</li>
-                                <li>📉 Akuisisi mahal, retention lemah</li>
+                                <li>📉 Churn tinggi ke kompetitor (Wise, Flip)</li>
+                                <li>📉 Frekuensi transaksi stagnan di 1.2x/bulan</li>
+                                <li>📉 Customer Lifetime Value tetap rendah</li>
+                                <li>📉 Biaya akuisisi mahal, retention lemah</li>
                             </ul>
                         </div>
                         <div class="impact-card positive">
-                            <h4>Jika Diselesaikan</h4>
+                            <h4>✅ Jika Diselesaikan</h4>
                             <ul>
-                                <li>📈 Switching cost meningkat</li>
-                                <li>📈 Emotional attachment kuat</li>
-                                <li>📈 User mengejar tier naik</li>
-                                <li>📈 Revenue per user meningkat</li>
+                                <li>📈 Switching cost meningkat drastis</li>
+                                <li>📈 Emotional attachment kuat ke brand</li>
+                                <li>📈 User mengejar tier naik → tx lebih sering</li>
+                                <li>📈 Revenue per user meningkat +25%</li>
                             </ul>
                         </div>
                     </div>
                     <div class="business-connection">
-                        <strong>Koneksi ke Tujuan Bisnis:</strong> Meningkatkan retention 15% → mengurangi biaya akuisisi → profitabilitas per user naik
+                        <div class="connection-icon">🎯</div>
+                        <div class="connection-text">
+                            <strong>Koneksi ke Tujuan Bisnis:</strong><br>
+                            Meningkatkan retention 15% → Mengurangi biaya akuisisi → Profitabilitas per user naik<br>
+                            <em>Cost of acquiring new customer 5x lebih mahal dari retain existing customer.</em>
+                        </div>
                     </div>
                 </div>
                 <div class="speaker-notes">
@@ -146,43 +316,52 @@
                 </div>
             </div>
 
-            <!-- SLIDE 6: COMPETITIVE BENCHMARK -->
-            <div class="slide" data-slide="6">
+            <!-- SLIDE 8: COMPETITIVE BENCHMARK -->
+            <div class="slide" data-slide="8">
                 <div class="slide-content">
-                    <h2 class="slide-title">Competitive Benchmark</h2>
-                    <table class="benchmark-table">
+                    <h2 class="slide-title">🏆 Competitive Benchmark</h2>
+                    <table class="benchmark-table-enhanced">
                         <thead>
                             <tr>
                                 <th>Platform</th>
                                 <th>Loyalty System</th>
+                                <th>Keunggulan</th>
                                 <th>Gap Topremit</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><strong>GrabRewards</strong></td>
-                                <td>Tiering: Member → Platinum</td>
+                                <td>Tiering: Member → Silver → Gold → Platinum</td>
+                                <td>Prioritas layanan, diskon besar</td>
                                 <td class="gap">❌ Tidak ada tier</td>
                             </tr>
                             <tr>
                                 <td><strong>Traveloka Priority</strong></td>
-                                <td>CS cepat, kupon eksklusif</td>
+                                <td>Tier berdasar total transaksi tahunan</td>
+                                <td>CS jalur cepat, kupon eksklusif</td>
                                 <td class="gap">❌ Tidak ada prioritas CS</td>
                             </tr>
                             <tr>
                                 <td><strong>Flip</strong></td>
                                 <td>Koin untuk produk digital</td>
+                                <td>Kegunaan instan, fleksibel</td>
                                 <td class="gap">❌ Koin terbatas withdraw</td>
                             </tr>
                             <tr>
                                 <td><strong>Wise</strong></td>
                                 <td>Referral fee reduction</td>
+                                <td>Direct savings, transparan</td>
                                 <td class="gap">❌ Belum ada sistem poin kuat</td>
                             </tr>
                         </tbody>
                     </table>
-                    <div class="opportunity-box">
-                        <strong>Competitive Opportunity:</strong> Kombinasi tiering + instant value (Smart Redeem) + emotional recognition
+                    <div class="opportunity-box-enhanced">
+                        <div class="opp-icon">💎</div>
+                        <div class="opp-text">
+                            <strong>Competitive Opportunity:</strong>
+                            Kombinasi <span class="highlight">Tiering</span> + <span class="highlight">Instant Value (Smart Redeem)</span> + <span class="highlight">Emotional Recognition</span>
+                        </div>
                     </div>
                 </div>
                 <div class="speaker-notes">
@@ -190,70 +369,91 @@
                 </div>
             </div>
 
-            <!-- SLIDE 7: PRODUCT GOAL & SUCCESS DEFINITION -->
-            <div class="slide" data-slide="7">
+            <!-- SLIDE 9: PRODUCT GOAL & SUCCESS DEFINITION -->
+            <div class="slide" data-slide="9">
                 <div class="slide-content">
-                    <h2 class="slide-title">Product Goal & Success Definition</h2>
+                    <h2 class="slide-title">🎯 Product Goal & Success Definition</h2>
                     <div class="goals-container">
-                        <div class="goal-main">
+                        <div class="goal-main-enhanced">
+                            <div class="goal-icon">🚀</div>
                             <h3>Tujuan Produk</h3>
-                            <p>Meningkatkan <strong>customer retention</strong> dan <strong>transaction frequency</strong> melalui program loyalitas yang memberikan nilai instan dan pengakuan status.</p>
+                            <p>Meningkatkan <strong>customer retention</strong> dan <strong>transaction frequency</strong> melalui program loyalitas yang memberikan <strong>nilai instan</strong> dan <strong>pengakuan status</strong>.</p>
                         </div>
-                        <div class="success-metrics">
-                            <h4>Definisi Sukses (SMART)</h4>
-                            <div class="metric-cards">
-                                <div class="metric-card">
-                                    <span class="metric-value">75%</span>
-                                    <span class="metric-label">Retention Rate</span>
-                                    <span class="metric-delta">+15% dari 60%</span>
+                        <div class="success-metrics-enhanced">
+                            <h4>📊 Definisi Sukses (SMART Metrics)</h4>
+                            <div class="metric-cards-enhanced">
+                                <div class="metric-card-enhanced">
+                                    <div class="metric-before">60%</div>
+                                    <div class="metric-arrow">→</div>
+                                    <div class="metric-after">75%</div>
+                                    <div class="metric-label">Retention Rate</div>
+                                    <div class="metric-delta positive">+15%</div>
                                 </div>
-                                <div class="metric-card">
-                                    <span class="metric-value">2x</span>
-                                    <span class="metric-label">Avg Tx/Month</span>
-                                    <span class="metric-delta">dari 1.2x</span>
+                                <div class="metric-card-enhanced">
+                                    <div class="metric-before">1.2x</div>
+                                    <div class="metric-arrow">→</div>
+                                    <div class="metric-after">2x</div>
+                                    <div class="metric-label">Avg Tx/Month</div>
+                                    <div class="metric-delta positive">+67%</div>
                                 </div>
-                                <div class="metric-card">
-                                    <span class="metric-value">+25%</span>
-                                    <span class="metric-label">CLV</span>
-                                    <span class="metric-delta">Total revenue</span>
+                                <div class="metric-card-enhanced">
+                                    <div class="metric-before">Base</div>
+                                    <div class="metric-arrow">→</div>
+                                    <div class="metric-after">+25%</div>
+                                    <div class="metric-label">Customer LTV</div>
+                                    <div class="metric-delta positive">Revenue ↑</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="speaker-notes">
-                    <strong>Speaker Notes:</strong> Metrics ini sejalan dengan tujuan bisnis Topremit untuk sustainable growth melalui customer retention.
+                    <strong>Speaker Notes:</strong> Metrics ini sejalan dengan tujuan bisnis Topremit untuk sustainable growth melalui customer retention. Semua target terukur dan achievable dalam 6 bulan.
                 </div>
             </div>
 
-            <!-- SLIDE 8: PROPOSED SOLUTION OVERVIEW -->
-            <div class="slide" data-slide="8">
+            <!-- SLIDE 10: PROPOSED SOLUTION OVERVIEW -->
+            <div class="slide" data-slide="10">
                 <div class="slide-content">
-                    <h2 class="slide-title">Proposed Solution Overview</h2>
-                    <div class="solution-diagram">
-                        <div class="solution-tier">
+                    <h2 class="slide-title">💡 Proposed Solution Overview</h2>
+                    <div class="solution-diagram-enhanced">
+                        <div class="solution-tier-section">
                             <h4>🏆 Tiered Loyalty System</h4>
-                            <div class="tier-visual">
-                                <div class="tier explorer">Explorer<br><small>0-2 tx</small></div>
-                                <div class="tier pro">Pro<br><small>3-5 tx</small></div>
-                                <div class="tier elite">Elite<br><small>6+ tx</small></div>
+                            <div class="tier-visual-enhanced">
+                                <div class="tier explorer">
+                                    <span class="tier-name">Explorer</span>
+                                    <span class="tier-req">0-2 tx</span>
+                                    <span class="tier-benefit">1x Coins</span>
+                                </div>
+                                <div class="tier-connector">→</div>
+                                <div class="tier pro">
+                                    <span class="tier-name">Pro</span>
+                                    <span class="tier-req">3-5 tx</span>
+                                    <span class="tier-benefit">1.5x Coins + 25% Disc</span>
+                                </div>
+                                <div class="tier-connector">→</div>
+                                <div class="tier elite">
+                                    <span class="tier-name">Elite</span>
+                                    <span class="tier-req">6+ tx</span>
+                                    <span class="tier-benefit">2x Coins + FREE Admin</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="solution-features">
-                            <div class="feature-box">
-                                <span>💳</span>
+                        <div class="solution-features-grid">
+                            <div class="feature-box-enhanced">
+                                <span class="feature-emoji">💳</span>
                                 <strong>Smart Redeem</strong>
-                                <p>Gunakan koin tanpa minimum di checkout</p>
+                                <p>Gunakan koin tanpa minimum di checkout - semua koin jadi valuable!</p>
                             </div>
-                            <div class="feature-box">
-                                <span>⚡</span>
+                            <div class="feature-box-enhanced">
+                                <span class="feature-emoji">⚡</span>
                                 <strong>Dynamic Multiplier</strong>
-                                <p>1x → 1.5x → 2x coins per tier</p>
+                                <p>1x → 1.5x → 2x coins per tier - makin loyal, makin untung!</p>
                             </div>
-                            <div class="feature-box">
-                                <span>🎯</span>
+                            <div class="feature-box-enhanced">
+                                <span class="feature-emoji">🎯</span>
                                 <strong>Gamified Milestones</strong>
-                                <p>Bonus koin untuk pencapaian</p>
+                                <p>Bonus koin untuk pencapaian - keep users engaged!</p>
                             </div>
                         </div>
                     </div>
@@ -263,67 +463,94 @@
                 </div>
             </div>
 
-            <!-- SLIDE 9: SOLUTION PRIORITIZATION -->
-            <div class="slide" data-slide="9">
+            <!-- SLIDE 11: SOLUTION PRIORITIZATION -->
+            <div class="slide" data-slide="11">
                 <div class="slide-content">
-                    <h2 class="slide-title">Solution Prioritization</h2>
-                    <div class="matrix-container">
-                        <div class="impact-effort-matrix">
-                            <div class="matrix-grid">
-                                <div class="matrix-quadrant q1">
-                                    <h5>Quick Wins (P0)</h5>
-                                    <ul>
-                                        <li>Smart Redeem</li>
-                                        <li>Dynamic Multiplier</li>
-                                    </ul>
-                                </div>
-                                <div class="matrix-quadrant q2">
-                                    <h5>Strategic (P0)</h5>
-                                    <ul>
-                                        <li>Tiering System</li>
-                                    </ul>
-                                </div>
-                                <div class="matrix-quadrant q3">
-                                    <h5>Fill-ins (P1)</h5>
-                                    <ul>
-                                        <li>Gamified Milestones</li>
-                                    </ul>
-                                </div>
-                                <div class="matrix-quadrant q4">
-                                    <h5>Nice to Have (P2)</h5>
-                                    <ul>
-                                        <li>Birthday Bonus</li>
-                                    </ul>
-                                </div>
+                    <h2 class="slide-title">📋 Solution Prioritization</h2>
+                    <div class="prioritization-container">
+                        <div class="priority-matrix">
+                            <div class="matrix-quadrant q1">
+                                <h5>🚀 Quick Wins (P0)</h5>
+                                <ul>
+                                    <li>Smart Redeem Toggle</li>
+                                    <li>Dynamic Coin Multiplier</li>
+                                </ul>
+                                <span class="effort-label">Low Effort</span>
                             </div>
-                            <div class="matrix-labels">
-                                <span class="label-effort">EFFORT →</span>
-                                <span class="label-impact">↑ IMPACT</span>
+                            <div class="matrix-quadrant q2">
+                                <h5>⭐ Strategic (P0)</h5>
+                                <ul>
+                                    <li>Tiering System (Explorer/Pro/Elite)</li>
+                                </ul>
+                                <span class="effort-label">Medium Effort</span>
+                            </div>
+                            <div class="matrix-quadrant q3">
+                                <h5>📝 Fill-ins (P1)</h5>
+                                <ul>
+                                    <li>Gamified Milestones</li>
+                                    <li>Elite Dashboard</li>
+                                </ul>
+                                <span class="effort-label">Low Effort</span>
+                            </div>
+                            <div class="matrix-quadrant q4">
+                                <h5>🎁 Nice to Have (P2)</h5>
+                                <ul>
+                                    <li>Birthday Bonus Coins</li>
+                                    <li>Priority CS Queue</li>
+                                </ul>
+                                <span class="effort-label">Low Effort</span>
+                            </div>
+                        </div>
+                        <div class="matrix-legend">
+                            <div class="legend-item">
+                                <span class="axis-label">← Low Effort</span>
+                                <span class="axis-label">High Effort →</span>
+                            </div>
+                            <div class="legend-item vertical">
+                                <span class="axis-label">↑ High Impact</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="speaker-notes">
-                    <strong>Speaker Notes:</strong> Prioritas P0 dipilih karena high impact dengan effort yang manageable. Smart Redeem quick win karena hanya butuh toggle di checkout.
+                    <strong>Speaker Notes:</strong> Prioritas P0 dipilih karena high impact dengan effort yang manageable. Smart Redeem adalah quick win karena hanya butuh toggle di checkout page.
                 </div>
             </div>
 
-            <!-- SLIDE 10: HYPOTHESIS -->
-            <div class="slide" data-slide="10">
+            <!-- SLIDE 12: HYPOTHESIS -->
+            <div class="slide" data-slide="12">
                 <div class="slide-content">
-                    <h2 class="slide-title">Hypothesis</h2>
-                    <div class="hypothesis-main">
+                    <h2 class="slide-title">🔬 Hypothesis</h2>
+                    <div class="hypothesis-main-enhanced">
+                        <div class="hypothesis-icon">💡</div>
                         <h3>Primary Hypothesis</h3>
-                        <blockquote>"Dengan mengimplementasikan Topremit Elite (Tiering System), kita akan meningkatkan Retention Rate sebesar 25% karena pengguna akan merasa rugi kehilangan benefit Free Admin Fee jika mereka pindah ke kompetitor."</blockquote>
+                        <blockquote>
+                            "Dengan mengimplementasikan <strong>Topremit Elite (Tiering System)</strong>, kita akan meningkatkan <strong>Retention Rate sebesar 25%</strong> karena pengguna akan merasa rugi kehilangan benefit <strong>Free Admin Fee</strong> jika mereka pindah ke kompetitor."
+                        </blockquote>
                     </div>
-                    <table class="hypothesis-table">
+                    <table class="hypothesis-table-enhanced">
                         <thead>
-                            <tr><th>#</th><th>Supporting Hypothesis</th><th>Validation</th></tr>
+                            <tr><th>#</th><th>Supporting Hypothesis</th><th>Validation Method</th><th>Timeline</th></tr>
                         </thead>
                         <tbody>
-                            <tr><td>H1</td><td>Elite user 2x lebih banyak transaksi dari Explorer</td><td>A/B test 3 bulan</td></tr>
-                            <tr><td>H2</td><td>Smart Redeem digunakan >40% transaksi</td><td>Feature adoption tracking</td></tr>
-                            <tr><td>H3</td><td>Tier naik menciptakan loss aversion → churn turun</td><td>Cohort analysis</td></tr>
+                            <tr>
+                                <td><span class="h-badge">H1</span></td>
+                                <td>Elite user akan melakukan <strong>2x lebih banyak</strong> transaksi dari Explorer</td>
+                                <td>A/B test dengan cohort</td>
+                                <td>3 bulan</td>
+                            </tr>
+                            <tr>
+                                <td><span class="h-badge">H2</span></td>
+                                <td>Smart Redeem akan digunakan oleh <strong>>35%</strong> user dalam transaksi</td>
+                                <td>Feature adoption tracking</td>
+                                <td>1 bulan</td>
+                            </tr>
+                            <tr>
+                                <td><span class="h-badge">H3</span></td>
+                                <td>Tier naik akan menciptakan <strong>loss aversion</strong> → churn menurun</td>
+                                <td>Cohort analysis</td>
+                                <td>3 bulan</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -332,29 +559,29 @@
                 </div>
             </div>
 
-            <!-- SLIDE 11: FEATURE - ELITE DASHBOARD -->
-            <div class="slide" data-slide="11">
+            <!-- SLIDE 13: FEATURE - ELITE DASHBOARD -->
+            <div class="slide" data-slide="13">
                 <div class="slide-content">
-                    <h2 class="slide-title">Feature: Elite Dashboard</h2>
-                    <div class="feature-detail">
-                        <div class="feature-info">
+                    <h2 class="slide-title">🎨 Feature: Elite Dashboard</h2>
+                    <div class="feature-detail-enhanced">
+                        <div class="feature-info-panel">
                             <span class="priority-tag p0">P0 - Must Have</span>
-                            <div class="user-story">
-                                <strong>User Story:</strong> Sebagai user, saya ingin melihat progres tier saya, agar saya tahu berapa transaksi lagi untuk naik level.
+                            <div class="user-story-box">
+                                <strong>📖 User Story:</strong>
+                                <p>"Sebagai user, saya ingin melihat progres tier saya, agar saya tahu berapa transaksi lagi untuk naik level."</p>
                             </div>
-                            <div class="acceptance-criteria">
-                                <h4>Acceptance Criteria:</h4>
+                            <div class="acceptance-criteria-box">
+                                <h4>✅ Acceptance Criteria:</h4>
                                 <ul>
-                                    <li>✅ Progress bar di menu "Profil"</li>
-                                    <li>✅ Daftar benefit aktif sesuai tier</li>
-                                    <li>✅ Notifikasi push saat hampir naik tier</li>
+                                    <li>✓ Progress bar di menu "Profil" menunjukkan posisi tier</li>
+                                    <li>✓ Daftar benefit aktif sesuai tier saat ini</li>
+                                    <li>✓ Notifikasi push saat hampir naik tier (1 tx lagi)</li>
+                                    <li>✓ Visual perbandingan benefit antar tier</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="feature-mockup">
-                            <div class="mockup-placeholder">
-                                <img src="../wireframe_elite_dashboard.png" alt="Elite Dashboard Wireframe" style="max-width:100%;border-radius:12px;">
-                            </div>
+                        <div class="feature-mockup-panel">
+                            <img src="wireframe_elite_dashboard.png" alt="Elite Dashboard Wireframe" class="mockup-image">
                         </div>
                     </div>
                 </div>
@@ -363,54 +590,54 @@
                 </div>
             </div>
 
-            <!-- SLIDE 12: FEATURE - ADMIN DISCOUNT -->
-            <div class="slide" data-slide="12">
+            <!-- SLIDE 14: FEATURE - ADMIN DISCOUNT -->
+            <div class="slide" data-slide="14">
                 <div class="slide-content">
-                    <h2 class="slide-title">Feature: Admin Discount</h2>
-                    <div class="feature-detail">
-                        <div class="feature-info">
+                    <h2 class="slide-title">💰 Feature: Admin Discount</h2>
+                    <div class="feature-detail-enhanced">
+                        <div class="feature-info-panel">
                             <span class="priority-tag p0">P0 - Must Have</span>
-                            <div class="user-story">
-                                <strong>User Story:</strong> Sebagai user tier "Elite", saya ingin diskon biaya admin otomatis, agar pengiriman uang lebih murah.
+                            <div class="user-story-box">
+                                <strong>📖 User Story:</strong>
+                                <p>"Sebagai user tier Elite, saya ingin diskon biaya admin otomatis, agar pengiriman uang lebih murah."</p>
                             </div>
-                            <div class="acceptance-criteria">
-                                <h4>Acceptance Criteria:</h4>
-                                <ul>
-                                    <li>✅ Sistem otomatis memotong biaya admin berdasarkan tier</li>
-                                    <li>✅ Label "Elite Discount Applied" ditampilkan</li>
-                                    <li>✅ Breakdown fee: harga normal vs setelah diskon</li>
-                                </ul>
-                            </div>
-                            <div class="tier-discount-info" style="margin-top: 15px; background: linear-gradient(135deg, #E0F7FA 0%, #B2EBF2 100%); padding: 15px; border-radius: 12px;">
-                                <h5 style="margin: 0 0 10px 0; color: #007FFF;">💰 Discount per Tier:</h5>
-                                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                                    <span style="background: #fff; padding: 8px 15px; border-radius: 20px; font-size: 0.9em;">Explorer: <strong>0%</strong></span>
-                                    <span style="background: #fff; padding: 8px 15px; border-radius: 20px; font-size: 0.9em;">Pro: <strong>25%</strong></span>
-                                    <span style="background: linear-gradient(135deg, #007FFF, #00CED1); color: white; padding: 8px 15px; border-radius: 20px; font-size: 0.9em;">Elite: <strong>100% FREE</strong></span>
+                            <div class="tier-discount-breakdown">
+                                <h4>💎 Discount per Tier:</h4>
+                                <div class="discount-tiers">
+                                    <div class="d-tier explorer"><span class="t-name">Explorer</span><span class="t-disc">0%</span></div>
+                                    <div class="d-tier pro"><span class="t-name">Pro</span><span class="t-disc">25%</span></div>
+                                    <div class="d-tier elite"><span class="t-name">Elite</span><span class="t-disc">100% FREE</span></div>
                                 </div>
                             </div>
+                            <div class="acceptance-criteria-box">
+                                <h4>✅ Acceptance Criteria:</h4>
+                                <ul>
+                                    <li>✓ Sistem otomatis memotong biaya admin</li>
+                                    <li>✓ Label "Elite Discount Applied" ditampilkan</li>
+                                    <li>✓ Breakdown: harga normal vs setelah diskon</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="feature-mockup">
-                            <!-- Interactive CSS Phone Mockup for Checkout -->
+                        <div class="feature-mockup-panel">
                             <div class="phone-mockup">
                                 <div class="phone-notch"></div>
                                 <div class="phone-screen">
                                     <div class="checkout-card-ui">
                                         <div class="checkout-header">
-                                            <span style="font-size: 1.2em;">💰</span>
+                                            <span>💰</span>
                                             <strong>Payment Summary</strong>
                                         </div>
                                         <div class="checkout-row">
-                                            <span>Biaya Admin</span>
-                                            <span style="text-decoration: line-through; color: #999;">Rp 35.000</span>
+                                            <span>Biaya Pengiriman</span>
+                                            <span style="text-decoration: line-through; color: #999;">Rp 45.000</span>
                                         </div>
                                         <div class="checkout-row discount-row">
                                             <span>🏆 Elite Discount</span>
-                                            <span style="color: #00CED1; font-weight: 600;">-Rp 35.000 (100%)</span>
+                                            <span style="color: #00CED1; font-weight: 600;">-Rp 45.000 (100%)</span>
                                         </div>
                                         <div class="checkout-divider"></div>
                                         <div class="checkout-row total-row">
-                                            <span><strong>Total Biaya Admin</strong></span>
+                                            <span><strong>Total Biaya Pengiriman</strong></span>
                                             <span class="free-badge">FREE ✓</span>
                                         </div>
                                         <div class="elite-badge-small">
@@ -424,60 +651,49 @@
                     </div>
                 </div>
                 <div class="speaker-notes">
-                    <strong>Speaker Notes:</strong> Diskon admin adalah benefit paling tangible yang langsung dirasakan user. Elite tier mendapat FREE admin fee sebagai ultimate benefit untuk mendorong upgrade tier.
+                    <strong>Speaker Notes:</strong> Diskon admin adalah benefit paling tangible. Elite tier mendapat FREE admin fee sebagai ultimate benefit untuk mendorong upgrade.
                 </div>
             </div>
 
-            <!-- SLIDE 13: FEATURE - SMART REDEEM -->
-            <div class="slide" data-slide="13">
+            <!-- SLIDE 15: FEATURE - SMART REDEEM -->
+            <div class="slide" data-slide="15">
                 <div class="slide-content">
-                    <h2 class="slide-title">Feature: Smart Redeem</h2>
-                    <div class="feature-detail">
-                        <div class="feature-info">
+                    <h2 class="slide-title">💳 Feature: Smart Redeem</h2>
+                    <div class="feature-detail-enhanced">
+                        <div class="feature-info-panel">
                             <span class="priority-tag p0">P0 - Must Have</span>
-                            <div class="user-story">
-                                <strong>User Story:</strong> Sebagai user, saya ingin menggunakan saldo TR Coins untuk memotong biaya admin langsung, agar transaksi lebih hemat.
+                            <div class="user-story-box">
+                                <strong>📖 User Story:</strong>
+                                <p>"Sebagai user, saya ingin menggunakan saldo TR Coins untuk memotong biaya admin langsung, agar transaksi lebih hemat."</p>
                             </div>
-                            <div class="before-after">
-                                <div class="before">
+                            <div class="before-after-enhanced">
+                                <div class="before-box">
                                     <h5>❌ Before</h5>
-                                    <p>Koin Rp2.000 → Tidak bisa ditarik (min Rp10.000)</p>
+                                    <p>TR Coins Rp2.000 → <strong>Tidak bisa ditarik</strong> (min Rp10.000)</p>
+                                    <span class="status-tag bad">Dead Value</span>
                                 </div>
-                                <div class="after">
-                                    <h5>✅ After</h5>
-                                    <p>Admin Rp45.000 - Koin Rp2.000 = Bayar Rp43.000</p>
+                                <div class="after-box">
+                                    <h5>✅ After (Smart Redeem)</h5>
+                                    <p>Admin Rp45.000 - Coins Rp2.000 = <strong>Bayar Rp43.000</strong></p>
+                                    <span class="status-tag good">Instant Value</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="feature-mockup">
-                            <!-- Interactive CSS Phone Mockup -->
+                        <div class="feature-mockup-panel">
                             <div class="phone-mockup">
                                 <div class="phone-notch"></div>
                                 <div class="phone-screen">
                                     <div class="smart-redeem-card-ui">
                                         <div class="card-header-ui">
-                                            <div class="brand-ui">
-                                                <span>Smart Redeem</span>
-                                            </div>
+                                            <div class="brand-ui"><span>💳</span> Smart Redeem</div>
                                             <div class="toggle-ui">ON</div>
                                         </div>
-                                        <div class="card-title-ui">
-                                            Gunakan TR Coins untuk potong biaya admin
-                                        </div>
-                                        <div class="balance-ui">Saldo: 2.500 Coins</div>
+                                        <div class="card-title-ui">Gunakan TR Coins untuk potong biaya admin</div>
+                                        <div class="balance-ui">💰 Saldo: 2.500 Coins</div>
                                         <div class="cost-breakdown">
-                                            <div class="cost-row">
-                                                <span>Biaya Admin:</span>
-                                                <span>Rp 45.000</span>
-                                            </div>
-                                            <div class="cost-row discount">
-                                                <span>Potongan Coins:</span>
-                                                <span>-Rp 2.000</span>
-                                            </div>
-                                            <div class="cost-row total">
-                                                <span>Bayar:</span>
-                                                <span>Rp 43.000</span>
-                                            </div>
+                                            <div class="cost-row"><span>Biaya Admin:</span><span>Rp 45.000</span></div>
+                                            <div class="cost-row discount"><span>Potongan Coins:</span><span>-Rp 2.000</span></div>
+                                            <div class="cost-row total"><span>Bayar:</span><span>Rp 43.000</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -486,83 +702,95 @@
                     </div>
                 </div>
                 <div class="speaker-notes">
-                    <strong>Speaker Notes:</strong> Smart Redeem menghilangkan friction "koin mati". Semua koin jadi valuable, meningkatkan perceived value program.
+                    <strong>Speaker Notes:</strong> Smart Redeem menghilangkan friction "koin mati". Semua koin jadi valuable, meningkatkan perceived value program. Adoption target: >40%.
                 </div>
             </div>
 
-            <!-- SLIDE 14: FEATURE - MILESTONES & GAMIFICATION -->
-            <div class="slide" data-slide="14">
+            <!-- SLIDE 16: FEATURE - MILESTONES & GAMIFICATION -->
+            <div class="slide" data-slide="16">
                 <div class="slide-content">
-                    <h2 class="slide-title">Feature: Milestones & Gamification</h2>
-                    <div class="milestone-content">
+                    <h2 class="slide-title">🎮 Feature: Milestones & Gamification</h2>
+                    <div class="milestone-content-enhanced">
                         <span class="priority-tag p1">P1 - Should Have</span>
-                        <div class="user-story">
-                            <strong>User Story:</strong> Sebagai user, saya ingin dapat koin tambahan saat mencapai target tertentu, agar saya termotivasi.
+                        <div class="user-story-box">
+                            <strong>📖 User Story:</strong>
+                            <p>"Sebagai user, saya ingin dapat koin tambahan saat mencapai target tertentu, agar saya termotivasi bertransaksi lebih sering."</p>
                         </div>
-                        <div class="milestones-grid">
-                            <div class="milestone-card">
+                        <div class="milestones-grid-enhanced">
+                            <div class="milestone-card-enhanced">
                                 <span class="milestone-icon">🎉</span>
                                 <h5>First Transaction</h5>
-                                <span class="bonus">+5.000 coins</span>
+                                <span class="bonus-amount">+5.000 coins</span>
+                                <span class="bonus-desc">Welcome bonus!</span>
                             </div>
-                            <div class="milestone-card">
+                            <div class="milestone-card-enhanced">
                                 <span class="milestone-icon">🚀</span>
                                 <h5>5 Tx/Month</h5>
-                                <span class="bonus">+10.000 coins</span>
+                                <span class="bonus-amount">+10.000 coins</span>
+                                <span class="bonus-desc">Power user reward</span>
                             </div>
-                            <div class="milestone-card">
+                            <div class="milestone-card-enhanced">
                                 <span class="milestone-icon">🎂</span>
                                 <h5>Birthday Month</h5>
-                                <span class="bonus">+15.000 coins</span>
+                                <span class="bonus-amount">+15.000 coins</span>
+                                <span class="bonus-desc">Special gift!</span>
                             </div>
-                            <div class="milestone-card">
+                            <div class="milestone-card-enhanced">
                                 <span class="milestone-icon">👥</span>
                                 <h5>Referral Success</h5>
-                                <span class="bonus">+40.000 coins</span>
+                                <span class="bonus-amount">+40.000 coins</span>
+                                <span class="bonus-desc">Invite & earn</span>
                             </div>
                         </div>
-                        <p class="emotional-note">💡 Milestone menciptakan emotional engagement melalui achievement popup dan celebration moment.</p>
+                        <div class="emotional-note-enhanced">
+                            <span class="note-icon">💡</span>
+                            <span class="note-text">Milestone menciptakan <strong>emotional engagement</strong> melalui achievement popup dan celebration moment. #KepodanPeka</span>
+                        </div>
                     </div>
                 </div>
                 <div class="speaker-notes">
-                    <strong>Speaker Notes:</strong> Gamifikasi memanfaatkan psikologi reward untuk mendorong perilaku yang diinginkan. Birthday bonus menciptakan emotional connection.
+                    <strong>Speaker Notes:</strong> Gamifikasi memanfaatkan psikologi reward untuk mendorong perilaku yang diinginkan. Birthday bonus menciptakan emotional connection yang kuat.
                 </div>
             </div>
 
-            <!-- SLIDE 15: METRICS & ANALYTICS -->
-            <div class="slide" data-slide="15">
+            <!-- SLIDE 17: METRICS & ANALYTICS -->
+            <div class="slide" data-slide="17">
                 <div class="slide-content">
-                    <h2 class="slide-title">Metrics & Analytics</h2>
-                    <div class="metrics-section">
-                        <div class="primary-metrics">
-                            <h4>Primary Metrics</h4>
-                            <div class="kpi-cards">
-                                <div class="kpi-card">
+                    <h2 class="slide-title">📊 Metrics & Analytics</h2>
+                    <div class="metrics-section-enhanced">
+                        <div class="primary-metrics-panel">
+                            <h4>🎯 Primary Metrics</h4>
+                            <div class="kpi-cards-enhanced">
+                                <div class="kpi-card-big">
                                     <span class="kpi-value">75%</span>
                                     <span class="kpi-label">Retention Rate</span>
+                                    <span class="kpi-target">Target: +15% dari 60%</span>
                                 </div>
-                                <div class="kpi-card">
+                                <div class="kpi-card-big">
                                     <span class="kpi-value">2x</span>
                                     <span class="kpi-label">Avg Tx/Month</span>
+                                    <span class="kpi-target">Target: dari 1.2x</span>
                                 </div>
-                                <div class="kpi-card">
+                                <div class="kpi-card-big">
                                     <span class="kpi-value">+25%</span>
                                     <span class="kpi-label">CLV</span>
+                                    <span class="kpi-target">Revenue per user</span>
                                 </div>
-                                <div class="kpi-card">
+                                <div class="kpi-card-big">
                                     <span class="kpi-value">>35%</span>
                                     <span class="kpi-label">Redeem Rate</span>
+                                    <span class="kpi-target">Smart Redeem usage</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="tracking-plan">
-                            <h4>Tracking Plan</h4>
-                            <ul>
-                                <li><strong>Daily:</strong> Active users by tier</li>
-                                <li><strong>Weekly:</strong> Redemption rate, feature adoption</li>
-                                <li><strong>Monthly:</strong> Retention cohort, CLV calculation</li>
-                                <li><strong>Quarterly:</strong> Business impact review</li>
-                            </ul>
+                        <div class="tracking-plan-panel">
+                            <h4>📆 Tracking Plan</h4>
+                            <div class="tracking-timeline">
+                                <div class="track-item"><span class="track-period">Daily</span><span class="track-desc">Active users by tier</span></div>
+                                <div class="track-item"><span class="track-period">Weekly</span><span class="track-desc">Redemption rate, feature adoption</span></div>
+                                <div class="track-item"><span class="track-period">Monthly</span><span class="track-desc">Retention cohort, CLV calculation</span></div>
+                                <div class="track-item"><span class="track-period">Quarterly</span><span class="track-desc">Business impact review</span></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -571,46 +799,153 @@
                 </div>
             </div>
 
-            <!-- SLIDE 16: ROLLOUT PLAN -->
-            <div class="slide" data-slide="16">
+            <!-- SLIDE 18: METRICS JUSTIFICATION & ASSUMPTIONS -->
+            <div class="slide" data-slide="18">
                 <div class="slide-content">
-                    <h2 class="slide-title">Rollout Plan</h2>
-                    <div class="rollout-timeline">
+                    <h2 class="slide-title">📐 Metrics Justification & Assumptions</h2>
+                    <div class="justification-intro">
+                        <p>Berikut adalah <strong>dasar logis dan argumen</strong> untuk setiap target metrik yang ditetapkan dalam PRD ini:</p>
+                    </div>
+                    <div class="justification-grid">
+                        <div class="justification-card">
+                            <div class="metric-header">
+                                <span class="metric-icon">📊</span>
+                                <div class="metric-target">
+                                    <strong>Retention Rate: 60% → 75%</strong>
+                                    <span class="delta">+15%</span>
+                                </div>
+                            </div>
+                            <div class="justification-content">
+                                <h5>📚 Basis:</h5>
+                                <ul>
+                                    <li><strong>Industry Benchmark:</strong> Rata-rata retention rate fintech loyalty program adalah 70-80% (sumber: Bain & Company)</li>
+                                    <li><strong>Loss Aversion Effect:</strong> User yang sudah mencapai tier Pro/Elite akan kehilangan benefit FREE admin fee jika churn → psychological barrier</li>
+                                    <li><strong>Comparable:</strong> GrabRewards meningkatkan retention 18% setelah implementasi tiering system</li>
+                                </ul>
+                                <div class="formula-box">
+                                    <strong>Asumsi Konservatif:</strong> 15% peningkatan = 50% dari potensi maksimal (30% gap to industry best)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="justification-card">
+                            <div class="metric-header">
+                                <span class="metric-icon">🔄</span>
+                                <div class="metric-target">
+                                    <strong>Tx Frequency: 1.2x → 2x/bulan</strong>
+                                    <span class="delta">+67%</span>
+                                </div>
+                            </div>
+                            <div class="justification-content">
+                                <h5>📚 Basis:</h5>
+                                <ul>
+                                    <li><strong>Gamification Effect:</strong> User mengejar tier naik membutuhkan 3-6 transaksi dalam 6 bulan → avg 0.5-1x/bulan menjadi motivasi tambahan</li>
+                                    <li><strong>Smart Redeem Incentive:</strong> Koin bisa langsung dipakai → user lebih sering transaksi untuk akumulasi koin</li>
+                                    <li><strong>Milestone Bonus:</strong> Target 5 tx/bulan untuk bonus 10.000 coins mendorong frekuensi</li>
+                                </ul>
+                                <div class="formula-box">
+                                    <strong>Kalkulasi:</strong> 1.2x base + 0.8x dari tier chasing + milestone = ~2x/bulan
+                                </div>
+                            </div>
+                        </div>
+                        <div class="justification-card">
+                            <div class="metric-header">
+                                <span class="metric-icon">💰</span>
+                                <div class="metric-target">
+                                    <strong>CLV (Customer Lifetime Value): +25%</strong>
+                                    <span class="delta">Revenue ↑</span>
+                                </div>
+                            </div>
+                            <div class="justification-content">
+                                <h5>📚 Basis:</h5>
+                                <ul>
+                                    <li><strong>Formula:</strong> CLV = Retention Rate × Tx Frequency × Avg Revenue per Tx</li>
+                                    <li><strong>Impact Calculation:</strong> 1.15 (retention) × 1.67 (frequency) × 0.65 (net after discount) = ~1.25x</li>
+                                    <li><strong>Industry Data:</strong> Loyalty programs typically increase CLV 20-30% (Harvard Business Review)</li>
+                                </ul>
+                                <div class="formula-box">
+                                    <strong>Note:</strong> Discount cost (FREE admin untuk Elite) dikompensasi oleh volume transaksi yang lebih tinggi
+                                </div>
+                            </div>
+                        </div>
+                        <div class="justification-card">
+                            <div class="metric-header">
+                                <span class="metric-icon">💳</span>
+                                <div class="metric-target">
+                                    <strong>Smart Redeem Adoption: >35%</strong>
+                                    <span class="delta">Feature Usage</span>
+                                </div>
+                            </div>
+                            <div class="justification-content">
+                                <h5>📚 Basis:</h5>
+                                <ul>
+                                    <li><strong>Similar Feature:</strong> Tokopedia Points redemption rate ~40% (internal benchmark)</li>
+                                    <li><strong>Friction Removal:</strong> Menghilangkan minimum Rp10.000 membuka ~60% user dengan saldo kecil</li>
+                                    <li><strong>Default ON:</strong> Toggle Smart Redeem default aktif di checkout → passive adoption</li>
+                                </ul>
+                                <div class="formula-box">
+                                    <strong>Konservatif:</strong> Target >35% adalah 70% dari potensi maksimal untuk safe estimation
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="speaker-notes">
+                    <strong>Speaker Notes:</strong> Semua metrik didasarkan pada industry benchmark, comparable analysis, dan asumsi konservatif. Target bersifat achievable dengan buffer 20-30% dari potensi maksimal.
+                </div>
+            </div>
+
+            <!-- SLIDE 19: ROLLOUT PLAN -->
+            <div class="slide" data-slide="19">
+                <div class="slide-content">
+                    <h2 class="slide-title">🗓️ Rollout Plan</h2>
+                    <div class="rollout-timeline-enhanced">
                         <div class="timeline-item active">
-                            <div class="timeline-marker">Q1</div>
+                            <div class="timeline-marker">Q1 2026</div>
                             <div class="timeline-content">
                                 <h4>Phase 1: MVP</h4>
                                 <ul>
-                                    <li>Elite Tiers Implementation</li>
-                                    <li>Smart Redeem Toggle</li>
-                                    <li>Elite Dashboard</li>
+                                    <li>✓ Elite Tiers Implementation</li>
+                                    <li>✓ Smart Redeem Toggle</li>
+                                    <li>✓ Elite Dashboard</li>
+                                    <li>✓ Dynamic Multiplier</li>
+                                </ul>
+                                <span class="phase-status current">🟢 Current Focus</span>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">Q2 2026</div>
+                            <div class="timeline-content">
+                                <h4>Phase 2: Business</h4>
+                                <ul>
+                                    <li>Business Loyalty Features</li>
+                                    <li>Dedicated Account Manager</li>
+                                    <li>Invoice Management</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="timeline-item">
-                            <div class="timeline-marker">Q2</div>
-                            <div class="timeline-content">
-                                <h4>Phase 2: Business</h4>
-                                <ul><li>Business Loyalty Features</li></ul>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker">Q3</div>
+                            <div class="timeline-marker">Q3 2026</div>
                             <div class="timeline-content">
                                 <h4>Phase 3: Social</h4>
-                                <ul><li>Leaderboard & Badges</li></ul>
+                                <ul>
+                                    <li>Social Leaderboard</li>
+                                    <li>Badge & Achievement</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="timeline-item">
-                            <div class="timeline-marker">Q4</div>
+                            <div class="timeline-marker">Q4 2026</div>
                             <div class="timeline-content">
                                 <h4>Phase 4: Partners</h4>
-                                <ul><li>Partner Points Exchange</li></ul>
+                                <ul>
+                                    <li>Partner Points Exchange</li>
+                                    <li>Merchant Redemption</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="dependencies">
-                        <strong>Dependencies:</strong> Backend (tier calculation), Frontend (UI), Analytics (tracking), CS (training)
+                    <div class="dependencies-box">
+                        <strong>🔗 Dependencies:</strong> Backend (tier calculation), Frontend (UI), Analytics (tracking), CS (training)
                     </div>
                 </div>
                 <div class="speaker-notes">
@@ -618,34 +953,38 @@
                 </div>
             </div>
 
-            <!-- SLIDE 17: RISK & MITIGATION -->
-            <div class="slide" data-slide="17">
+            <!-- SLIDE 20: RISK & MITIGATION -->
+            <div class="slide" data-slide="20">
                 <div class="slide-content">
-                    <h2 class="slide-title">Risk & Mitigation</h2>
-                    <table class="risk-table">
+                    <h2 class="slide-title">⚠️ Risk & Mitigation</h2>
+                    <table class="risk-table-enhanced">
                         <thead>
-                            <tr><th>Kategori</th><th>Risk</th><th>Mitigation</th></tr>
+                            <tr><th>Kategori</th><th>Risk</th><th>Impact</th><th>Mitigation</th></tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><span class="risk-cat user">User</span></td>
+                                <td><span class="risk-cat user">👤 User</span></td>
                                 <td>Kebingungan tentang tier system</td>
-                                <td>Clear onboarding & in-app education</td>
+                                <td><span class="impact-level medium">Medium</span></td>
+                                <td>Clear onboarding & in-app education tooltips</td>
                             </tr>
                             <tr>
-                                <td><span class="risk-cat business">Business</span></td>
+                                <td><span class="risk-cat business">💼 Business</span></td>
                                 <td>High discount impact on revenue</td>
-                                <td>Cap on max discount per user</td>
+                                <td><span class="impact-level high">High</span></td>
+                                <td>Cap on max discount per user per month</td>
                             </tr>
                             <tr>
-                                <td><span class="risk-cat tech">Technical</span></td>
+                                <td><span class="risk-cat tech">🔧 Technical</span></td>
                                 <td>Tier calculation complexity</td>
-                                <td>Phased rollout, beta testing</td>
+                                <td><span class="impact-level medium">Medium</span></td>
+                                <td>Phased rollout, extensive beta testing</td>
                             </tr>
                             <tr>
-                                <td><span class="risk-cat business">Business</span></td>
-                                <td>Referral fraud</td>
-                                <td>Verification requirements</td>
+                                <td><span class="risk-cat business">💼 Business</span></td>
+                                <td>Referral fraud abuse</td>
+                                <td><span class="impact-level medium">Medium</span></td>
+                                <td>KYC verification & transaction min requirements</td>
                             </tr>
                         </tbody>
                     </table>
@@ -655,35 +994,45 @@
                 </div>
             </div>
 
-            <!-- SLIDE 18: BUSINESS IMPACT SUMMARY -->
-            <div class="slide" data-slide="18">
+            <!-- SLIDE 21: BUSINESS IMPACT SUMMARY -->
+            <div class="slide" data-slide="21">
                 <div class="slide-content">
-                    <h2 class="slide-title">Business Impact Summary</h2>
-                    <div class="impact-summary">
-                        <div class="impact-metrics">
-                            <div class="big-metric">
-                                <span class="value">60% → 75%</span>
-                                <span class="label">Retention Rate</span>
-                                <span class="change positive">+15%</span>
+                    <h2 class="slide-title">📈 Business Impact Summary</h2>
+                    <div class="impact-summary-enhanced">
+                        <div class="impact-metrics-big">
+                            <div class="big-metric-card">
+                                <div class="metric-content">
+                                    <span class="from">60%</span>
+                                    <span class="arrow">→</span>
+                                    <span class="to">75%</span>
+                                </div>
+                                <span class="metric-name">Retention Rate</span>
+                                <span class="metric-gain positive">+15%</span>
                             </div>
-                            <div class="big-metric">
-                                <span class="value">1.2x → 2x</span>
-                                <span class="label">Tx Frequency</span>
-                                <span class="change positive">+67%</span>
+                            <div class="big-metric-card">
+                                <div class="metric-content">
+                                    <span class="from">1.2x</span>
+                                    <span class="arrow">→</span>
+                                    <span class="to">2x</span>
+                                </div>
+                                <span class="metric-name">Tx Frequency</span>
+                                <span class="metric-gain positive">+67%</span>
                             </div>
-                            <div class="big-metric">
-                                <span class="value">+25%</span>
-                                <span class="label">Customer Lifetime Value</span>
-                                <span class="change positive">Revenue ↑</span>
+                            <div class="big-metric-card">
+                                <div class="metric-content">
+                                    <span class="to highlight">+25%</span>
+                                </div>
+                                <span class="metric-name">Customer Lifetime Value</span>
+                                <span class="metric-gain positive">Revenue ↑</span>
                             </div>
                         </div>
-                        <div class="why-worth">
-                            <h4>Mengapa Layak Dibangun?</h4>
+                        <div class="why-worth-enhanced">
+                            <h4>🚀 Mengapa Layak Dibangun?</h4>
                             <ul>
-                                <li>✅ Mengurangi churn = mengurangi cost akuisisi</li>
-                                <li>✅ Meningkatkan revenue per user</li>
-                                <li>✅ Membangun competitive moat</li>
-                                <li>✅ Foundation untuk future features</li>
+                                <li>✅ Mengurangi churn = mengurangi cost akuisisi (<em>5x lebih mahal</em>)</li>
+                                <li>✅ Meningkatkan revenue per user melalui frekuensi tinggi</li>
+                                <li>✅ Membangun competitive moat yang sulit ditiru</li>
+                                <li>✅ Foundation untuk future features (Business, Social, Partners)</li>
                             </ul>
                         </div>
                     </div>
@@ -693,26 +1042,39 @@
                 </div>
             </div>
 
-            <!-- SLIDE 19: NEXT ITERATION & CLOSING -->
-            <div class="slide" data-slide="19">
+            <!-- SLIDE 22: NEXT ITERATION & CLOSING -->
+            <div class="slide" data-slide="22">
                 <div class="slide-content closing-slide">
-                    <h2 class="slide-title">Next Iteration & Closing</h2>
-                    <div class="future-scope">
+                    <h2 class="slide-title">🔮 Next Iteration & Closing</h2>
+                    <div class="future-scope-enhanced">
                         <h4>Future Scope (6-12 Months)</h4>
-                        <div class="future-items">
-                            <span class="future-item">💼 Business Loyalty</span>
-                            <span class="future-item">🏆 Social Leaderboard</span>
-                            <span class="future-item">🔄 Partner Exchange</span>
+                        <div class="future-items-grid">
+                            <div class="future-item-card">
+                                <span class="future-emoji">💼</span>
+                                <strong>Business Loyalty</strong>
+                                <p>Fitur khusus untuk pemilik bisnis</p>
+                            </div>
+                            <div class="future-item-card">
+                                <span class="future-emoji">🏆</span>
+                                <strong>Social Leaderboard</strong>
+                                <p>Top Contributor ranking</p>
+                            </div>
+                            <div class="future-item-card">
+                                <span class="future-emoji">🔄</span>
+                                <strong>Partner Exchange</strong>
+                                <p>Tukar koin ke partner points</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="closing-statement">
+                    <div class="closing-statement-enhanced">
                         <p class="tagline">"Turning Transactions into Relationships"</p>
                         <p class="hashtag">#KepodanPeka #TopremitElite</p>
                     </div>
-                    <div class="thank-you">
+                    <div class="thank-you-enhanced">
                         <h3>Terima Kasih</h3>
-                        <p>Ridho Bintang Aulia</p>
-                        <p class="cta">Open for Discussion & Questions</p>
+                        <p class="presenter-name">Ridho Bintang Aulia</p>
+                        <p class="presenter-role">Product Manager Candidate</p>
+                        <div class="cta-box">Open for Discussion & Questions</div>
                     </div>
                 </div>
                 <div class="speaker-notes">
@@ -725,7 +1087,7 @@
         <!-- Navigation -->
         <div class="nav-controls">
             <button id="prevBtn" onclick="changeSlide(-1)">‹ Previous</button>
-            <span id="slideCounter">1 / 19</span>
+            <span id="slideCounter">1 / 22</span>
             <button id="nextBtn" onclick="changeSlide(1)">Next ›</button>
         </div>
 

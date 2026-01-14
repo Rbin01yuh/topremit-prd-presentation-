@@ -1,6 +1,6 @@
 // Topremit Elite Presentation Script
 let currentSlide = 1;
-const totalSlides = 18;
+const totalSlides = 22;
 let notesVisible = true;
 
 function updateSlide() {
